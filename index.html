@@ -3,61 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analytic Ratiocinator</title>
+  <title>Advanced Analytic Ratiocinator</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
   <header class="bg-blue-600 text-white p-4 text-center">
-    <h1 class="text-2xl font-bold">Analytic Ratiocinator</h1>
-    <p class="text-sm">Optimize supply chain resources and routes using set operations.</p>
+    <h1 class="text-3xl font-bold">Supply Chain Ratiocinator</h1>
+    <p class="text-sm">Optimize inventory and logistics with advanced set operations.</p>
   </header>
 
   <!-- Main Content -->
   <main class="p-6">
     <!-- Input Section -->
-    <div class="bg-white shadow-md rounded p-4">
-      <h2 class="text-xl font-semibold mb-4">Input Data</h2>
+    <div class="bg-white shadow-md rounded p-6">
+      <h2 class="text-2xl font-semibold mb-4">Input Data</h2>
       <form id="inputForm" class="space-y-4">
-        <!-- Warehouse A -->
+        <!-- Warehouses -->
         <div>
-          <label for="warehouseA" class="block font-medium">Warehouse A Items:</label>
-          <input type="text" id="warehouseA" placeholder="Enter items separated by commas" 
-                 class="w-full p-2 border border-gray-300 rounded">
-        </div>
-
-        <!-- Warehouse B -->
-        <div>
-          <label for="warehouseB" class="block font-medium">Warehouse B Items:</label>
-          <input type="text" id="warehouseB" placeholder="Enter items separated by commas" 
-                 class="w-full p-2 border border-gray-300 rounded">
+          <label for="warehouses" class="block font-medium">Warehouses and Inventory:</label>
+          <textarea id="warehouses" rows="4" 
+                    placeholder='Enter warehouses in JSON format, e.g., {"W1": ["item1", "item2"], "W2": ["item3", "item2"]}'
+                    class="w-full p-2 border border-gray-300 rounded"></textarea>
         </div>
 
         <!-- Pending Orders -->
         <div>
-          <label for="pendingOrders" class="block font-medium">Pending Orders:</label>
-          <input type="text" id="pendingOrders" placeholder="Enter items separated by commas" 
+          <label for="orders" class="block font-medium">Pending Orders:</label>
+          <input type="text" id="orders" placeholder="Enter orders separated by commas" 
                  class="w-full p-2 border border-gray-300 rounded">
         </div>
 
         <!-- Routes -->
         <div>
           <label for="routes" class="block font-medium">Routes:</label>
-          <input type="text" id="routes" placeholder="Enter routes separated by commas" 
-                 class="w-full p-2 border border-gray-300 rounded">
+          <textarea id="routes" rows="4" 
+                    placeholder='Enter routes in JSON format, e.g., {"Route1": ["W1", "W2"], "Route2": ["W2", "W3"]}'
+                    class="w-full p-2 border border-gray-300 rounded"></textarea>
         </div>
 
         <!-- Submit Button -->
         <button type="button" id="processSets" class="w-full bg-blue-600 text-white p-2 rounded">
-          Process Sets
+          Analyze
         </button>
       </form>
     </div>
 
     <!-- Results Section -->
-    <div class="mt-6 bg-white shadow-md rounded p-4">
-      <h2 class="text-xl font-semibold mb-4">Results</h2>
+    <div class="mt-6 bg-white shadow-md rounded p-6">
+      <h2 class="text-2xl font-semibold mb-4">Results</h2>
       <div id="results" class="space-y-2">
         <!-- Results will be displayed here -->
       </div>
