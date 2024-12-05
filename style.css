@@ -1,0 +1,133 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Wrapper for the App */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+.hero {
+    text-align: center;
+    background: linear-gradient(45deg, #4CAF50, #1E88E5);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Content Styling */
+.content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Input Section */
+.input-section, .operations-section, .output-section {
+    margin-bottom: 20px;
+}
+
+.input-section h2, .operations-section h2, .output-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Operations Section */
+.operations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    flex: 1 1 45%;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #43a047;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Output Section */
+.output-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
